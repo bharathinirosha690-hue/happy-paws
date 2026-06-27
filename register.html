@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Register an adopter profile with Happy Paws to start your companion matching process, schedule shelter visits, or sponsor rescues.">
+  <title>Register Adopter Profile | Happy Paws</title>
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+  <main class="container-fluid p-0 overflow-hidden">
+    <div class="row g-0 min-vh-100">
+      
+      <!-- Split Left Column: Images (Desktop Only) -->
+      <div class="col-lg-6 d-none d-lg-block auth-split-img" style="background-image: url('https://images.unsplash.com/photo-1581888227599-779811939961?auto=format&fit=crop&w=1000&q=80');">
+        <div class="h-100 w-100 bg-secondary-custom d-flex flex-column justify-content-end p-5 text-white" style="--bs-bg-opacity: 0.45;">
+          <h2 class="display-5 fw-bold text-white mb-2">Join the Rescue Community</h2>
+          <p class="lead text-white-50">Set up a profile today. Speeds up adoption approvals, lets you register for volunteering, and tracks your donations easily.</p>
+        </div>
+      </div>
+
+      <!-- Split Right Column: Registration Card -->
+      <div class="col-lg-6 d-flex align-items-center justify-content-center bg-white py-5 px-4">
+        <div class="w-100" style="max-width: 500px;">
+          
+          <!-- Brand Logo back link -->
+          <div class="text-center mb-4">
+            <a href="index.html" class="navbar-brand text-secondary-custom d-inline-flex align-items-center fs-3">
+              <i class="bi bi-paw-fill text-primary-custom me-2" aria-hidden="true"></i>
+              <span class="fw-bold">Happy Paws</span>
+            </a>
+          </div>
+
+          <h2 class="fw-bold text-secondary-custom mb-1 text-center text-lg-start">Create Profile</h2>
+          <p class="text-muted mb-4 small text-center text-lg-start">Complete the details below to initialize your Adopter Profile.</p>
+
+          <!-- Register Form -->
+          <form id="adopterRegisterForm">
+            
+            <div class="row g-2">
+              
+              <!-- Full name -->
+              <div class="col-12">
+                <div class="form-floating mb-2">
+                  <input type="text" class="form-control" id="regName" placeholder="John Doe" required>
+                  <label for="regName">Full Name</label>
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="col-md-6">
+                <div class="form-floating mb-2">
+                  <input type="email" class="form-control" id="regEmail" placeholder="name@example.com" required>
+                  <label for="regEmail">Email Address</label>
+                </div>
+              </div>
+
+              <!-- Phone -->
+              <div class="col-md-6">
+                <div class="form-floating mb-2">
+                  <input type="tel" class="form-control" id="regPhone" placeholder="(555) 555-0100" required>
+                  <label for="regPhone">Phone Number</label>
+                </div>
+              </div>
+
+              <!-- Password -->
+              <div class="col-md-6">
+                <div class="form-floating mb-2">
+                  <input type="password" class="form-control" id="regPassword" placeholder="Password" required>
+                  <label for="regPassword">Password</label>
+                </div>
+              </div>
+
+              <!-- Confirm Password -->
+              <div class="col-md-6">
+                <div class="form-floating mb-2">
+                  <input type="password" class="form-control" id="regConfirmPassword" placeholder="Confirm Password" required>
+                  <label for="regConfirmPassword">Confirm Password</label>
+                </div>
+              </div>
+
+              <!-- Housing setup -->
+              <div class="col-md-6">
+                <div class="form-floating mb-2">
+                  <select id="regHousing" class="form-select" required>
+                    <option value="" disabled selected>Select arrangement</option>
+                    <option value="own">Own Home</option>
+                    <option value="rent">Rent Home</option>
+                    <option value="apartment">Apartment</option>
+                  </select>
+                  <label for="regHousing">Living Space</label>
+                </div>
+              </div>
+
+              <!-- Other pets -->
+              <div class="col-md-6">
+                <div class="p-2 border rounded bg-light d-flex align-items-center justify-content-between h-100" style="min-height:58px;">
+                  <span class="small text-muted fw-semibold ps-2">Own other pets?</span>
+                  <div class="pe-2">
+                    <div class="form-check form-check-inline m-0">
+                      <input class="form-check-input" type="radio" name="regOtherPets" id="regPetsYes" value="yes">
+                      <label class="form-check-label small" for="regPetsYes">Yes</label>
+                    </div>
+                    <div class="form-check form-check-inline m-0">
+                      <input class="form-check-input" type="radio" name="regOtherPets" id="regPetsNo" value="no" checked>
+                      <label class="form-check-label small" for="regPetsNo">No</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Terms & conditions -->
+              <div class="col-12 mt-2">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="regTerms" required>
+                  <label class="form-check-label text-muted small" for="regTerms">
+                    I agree to the Happy Paws <a href="#" class="text-primary-custom fw-semibold">Privacy Policy</a> and authorize shelter staff to verify references.
+                  </label>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Submit -->
+            <button type="submit" class="btn btn-primary-custom w-100 py-3 shadow mb-4 mt-3">Register Profile</button>
+
+            <!-- Social Connectors -->
+            <div class="text-center mb-4">
+              <span class="text-muted small position-relative px-2 bg-white" style="z-index: 10;">Or Sign Up With</span>
+              <hr class="mt-2 mb-4" style="margin-top: -10px !important;">
+              <div class="d-flex gap-2">
+                <button type="button" class="btn btn-outline-secondary w-50 py-2 d-flex align-items-center justify-content-center gap-2 small">
+                  <i class="bi bi-google text-danger"></i> Google
+                </button>
+                <button type="button" class="btn btn-outline-secondary w-50 py-2 d-flex align-items-center justify-content-center gap-2 small">
+                  <i class="bi bi-facebook text-primary"></i> Facebook
+                </button>
+              </div>
+            </div>
+
+            <!-- Login callout -->
+            <p class="text-center text-muted small mb-0">Already have an adopter profile? <a href="login.html" class="text-primary-custom fw-semibold">Sign in here</a></p>
+
+          </form>
+
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Bootstrap 5 JS Bundle CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Interactive script -->
+  <script>
+    document.getElementById('adopterRegisterForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Confirm match of passwords
+      const pass = document.getElementById('regPassword').value;
+      const confirmPass = document.getElementById('regConfirmPassword').value;
+      if (pass !== confirmPass) {
+        alert('Error: Passwords do not match. Please verify.');
+        return;
+      }
+
+      alert('Registration Simulation Successful! Welcome to Happy Paws rescue network. You can now submit application forms.');
+      window.location.href = 'index.html';
+    });
+  </script>
+</body>
+</html>

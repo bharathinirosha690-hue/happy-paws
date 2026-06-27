@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Read our pet care blog. Learn about dog training tips, cat nutrition guides, rabbit housing advice, microchipping importance, and general vet clinic suggestions.">
+  <title>Pet Care Blog & Articles | Happy Paws Pet Adoption</title>
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg sticky-top glass-navbar py-3">
+    <div class="container">
+      <a class="navbar-brand text-secondary-custom d-flex align-items-center" href="index.html">
+        <i class="bi bi-paw-fill text-primary-custom me-2" aria-hidden="true"></i>
+        <span>Happy Paws</span>
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header border-bottom">
+          <h5 class="offcanvas-title text-secondary-custom d-flex align-items-center" id="offcanvasNavbarLabel">
+            <i class="bi bi-paw-fill text-primary-custom me-2"></i>Happy Paws
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="pets.html">Pets</a></li>
+            <li class="nav-item"><a class="nav-link" href="adoption.html">Adoption</a></li>
+            <li class="nav-item"><a class="nav-link" href="stories.html">Success Stories</a></li>
+            <li class="nav-item"><a class="nav-link" href="volunteer.html">Volunteer</a></li>
+            <li class="nav-item"><a class="nav-link" href="donation.html">Donation</a></li>
+            <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+          <div class="d-flex gap-2 flex-column flex-lg-row mt-3 mt-lg-0">
+            <a href="login.html" class="btn btn-outline-primary-custom w-100 w-lg-auto">Login</a>
+            <a href="register.html" class="btn btn-primary-custom w-100 w-lg-auto">Register</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="py-5 bg-secondary-custom text-white" id="blog-hero">
+    <div class="container py-4 text-center">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb justify-content-center mb-2">
+          <li class="breadcrumb-item"><a href="index.html" class="text-white-50">Home</a></li>
+          <li class="breadcrumb-item active text-white" aria-current="page">Blog</li>
+        </ol>
+      </nav>
+      <h1 class="display-4 text-white fw-bold">Happy Paws Pet Care Blog</h1>
+      <p class="lead text-white-50 col-md-8 mx-auto mb-0">Discover expert veterinary advice, dog training tricks, nutritional guidelines, and happy stories from our adoption center.</p>
+    </div>
+  </section>
+
+  <!-- BLOG CONTAINER -->
+  <main class="py-5" id="blog-main">
+    <div class="container">
+      <div class="row g-4">
+        
+        <!-- Blog posts column -->
+        <div class="col-lg-8">
+          
+          <!-- Featured post (Horizontal) -->
+          <article class="card border-0 shadow-sm overflow-hidden mb-5 rounded-4 card-hover">
+            <div class="row g-0">
+              <div class="col-md-5 img-zoom-container">
+                <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=600&h=600&q=80" class="h-100 w-100 object-fit-cover" alt="Dogs running together in field">
+              </div>
+              <div class="col-md-7">
+                <div class="card-body p-4 p-md-5 d-flex flex-column h-100 justify-content-center">
+                  <div class="mb-2">
+                    <span class="badge bg-primary-custom py-2 px-3 rounded-pill text-uppercase">Adoption Guides</span>
+                    <small class="text-muted ms-3"><i class="bi bi-clock"></i> 5 min read</small>
+                  </div>
+                  <h3 class="fw-bold mb-3"><a href="#" class="text-secondary-custom">5 Tips for Welcoming Your New Rescue Dog</a></h3>
+                  <p class="text-muted small mb-4">Adopting a dog is exciting, but the transition can be stressful. Discover how setting boundaries, scheduling decompressions, and introducing routines help new dogs settle in safely.</p>
+                  <div class="d-flex align-items-center justify-content-between pt-3 border-top mt-auto">
+                    <div class="d-flex align-items-center gap-2">
+                      <i class="bi bi-person-circle fs-5 text-primary-custom"></i>
+                      <span class="small fw-semibold text-secondary-custom">Clara Montgomery</span>
+                    </div>
+                    <span class="small text-muted">June 12, 2026</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Grid articles -->
+          <div class="row g-4">
+            
+            <!-- Post 1 -->
+            <div class="col-md-6">
+              <article class="card card-hover border-0 shadow-sm h-100">
+                <div class="img-zoom-container" style="height: 200px;">
+                  <span class="badge bg-accent-custom position-absolute top-0 start-0 m-3 z-3 py-2 px-3 rounded-pill text-uppercase">Health & Nutrition</span>
+                  <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=600&h=400&q=80" class="card-img-top h-100 object-fit-cover" alt="Cat sleeping cozy">
+                </div>
+                <div class="card-body p-4 d-flex flex-column">
+                  <small class="text-muted d-block mb-2"><i class="bi bi-calendar-event"></i> June 08, 2026</small>
+                  <h5 class="fw-bold text-secondary-custom mb-3"><a href="#" class="text-secondary-custom">Decoding Cat Body Language</a></h5>
+                  <p class="text-muted small mb-4">Are tail flickers signals of playtime or warnings of irritation? Learn how to read your cat's posture and vocalizations correctly.</p>
+                  <div class="d-flex justify-content-between align-items-center pt-3 border-top mt-auto small">
+                    <span class="fw-semibold text-secondary-custom">Dr. Aris Thorne</span>
+                    <a href="#" class="fw-bold">Read Article <i class="bi bi-arrow-right"></i></a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- Post 2 -->
+            <div class="col-md-6">
+              <article class="card card-hover border-0 shadow-sm h-100">
+                <div class="img-zoom-container" style="height: 200px;">
+                  <span class="badge bg-accent-custom position-absolute top-0 start-0 m-3 z-3 py-2 px-3 rounded-pill text-uppercase">Small Animals</span>
+                  <img src="https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?auto=format&fit=crop&w=600&h=400&q=80" class="card-img-top h-100 object-fit-cover" alt="Fluffy rabbit">
+                </div>
+                <div class="card-body p-4 d-flex flex-column">
+                  <small class="text-muted d-block mb-2"><i class="bi bi-calendar-event"></i> May 29, 2026</small>
+                  <h5 class="fw-bold text-secondary-custom mb-3"><a href="#" class="text-secondary-custom">Rabbit Grooming Essentials</a></h5>
+                  <p class="text-muted small mb-4">Angora and long-haired rabbits require meticulous grooming. Discover brush types, ear inspections, and claw maintenance guidelines.</p>
+                  <div class="d-flex justify-content-between align-items-center pt-3 border-top mt-auto small">
+                    <span class="fw-semibold text-secondary-custom">Maya Sterling</span>
+                    <a href="#" class="fw-bold">Read Article <i class="bi bi-arrow-right"></i></a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- Post 3 -->
+            <div class="col-md-6">
+              <article class="card card-hover border-0 shadow-sm h-100">
+                <div class="img-zoom-container" style="height: 200px;">
+                  <span class="badge bg-accent-custom position-absolute top-0 start-0 m-3 z-3 py-2 px-3 rounded-pill text-uppercase">Safety</span>
+                  <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=600&h=400&q=80" class="card-img-top h-100 object-fit-cover" alt="Puppy checkup">
+                </div>
+                <div class="card-body p-4 d-flex flex-column">
+                  <small class="text-muted d-block mb-2"><i class="bi bi-calendar-event"></i> May 24, 2026</small>
+                  <h5 class="fw-bold text-secondary-custom mb-3"><a href="#" class="text-secondary-custom">Why Microchip Your Animal?</a></h5>
+                  <p class="text-muted small mb-4">Collars can slip off. Microchipping provides a secure, lifetime RFID identification key linking lost pets back to you.</p>
+                  <div class="d-flex justify-content-between align-items-center pt-3 border-top mt-auto small">
+                    <span class="fw-semibold text-secondary-custom">Dr. Aris Thorne</span>
+                    <a href="#" class="fw-bold">Read Article <i class="bi bi-arrow-right"></i></a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- Post 4 -->
+            <div class="col-md-6">
+              <article class="card card-hover border-0 shadow-sm h-100">
+                <div class="img-zoom-container" style="height: 200px;">
+                  <span class="badge bg-accent-custom position-absolute top-0 start-0 m-3 z-3 py-2 px-3 rounded-pill text-uppercase">Training Tips</span>
+                  <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=600&h=400&q=80" class="card-img-top h-100 object-fit-cover" alt="Dog catching treat">
+                </div>
+                <div class="card-body p-4 d-flex flex-column">
+                  <small class="text-muted d-block mb-2"><i class="bi bi-calendar-event"></i> May 18, 2026</small>
+                  <h5 class="fw-bold text-secondary-custom mb-3"><a href="#" class="text-secondary-custom">Leash Training in 3 Steps</a></h5>
+                  <p class="text-muted small mb-4">Pulling issues on walks? Discover reinforcement techniques, harness options, and timing cues that keep walks pleasant.</p>
+                  <div class="d-flex justify-content-between align-items-center pt-3 border-top mt-auto small">
+                    <span class="fw-semibold text-secondary-custom">Marcus Vance</span>
+                    <a href="#" class="fw-bold">Read Article <i class="bi bi-arrow-right"></i></a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+          </div>
+
+          <!-- Blog Pagination -->
+          <nav aria-label="Blog pagination" class="mt-5">
+            <ul class="pagination justify-content-center">
+              <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a></li>
+              <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+          </nav>
+
+        </div>
+
+        <!-- Sidebar column -->
+        <aside class="col-lg-4">
+          
+          <!-- Keyword Search widget -->
+          <div class="sidebar-widget">
+            <h4 class="sidebar-widget-title fw-bold text-secondary-custom">Search Blog</h4>
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search articles...">
+              <button class="btn btn-primary-custom" type="button" aria-label="Search"><i class="bi bi-search"></i></button>
+            </div>
+          </div>
+
+          <!-- Categories widget -->
+          <div class="sidebar-widget">
+            <h4 class="sidebar-widget-title fw-bold text-secondary-custom">Categories</h4>
+            <ul class="list-unstyled d-flex flex-column gap-2 mb-0 small">
+              <li class="d-flex justify-content-between align-items-center">
+                <a href="#" class="text-secondary-custom"><i class="bi bi-folder me-2 text-primary-custom"></i> Training Tips</a>
+                <span class="badge bg-light text-secondary border">12</span>
+              </li>
+              <li class="d-flex justify-content-between align-items-center">
+                <a href="#" class="text-secondary-custom"><i class="bi bi-folder me-2 text-primary-custom"></i> Health & Nutrition</a>
+                <span class="badge bg-light text-secondary border">15</span>
+              </li>
+              <li class="d-flex justify-content-between align-items-center">
+                <a href="#" class="text-secondary-custom"><i class="bi bi-folder me-2 text-primary-custom"></i> Small Animals</a>
+                <span class="badge bg-light text-secondary border">8</span>
+              </li>
+              <li class="d-flex justify-content-between align-items-center">
+                <a href="#" class="text-secondary-custom"><i class="bi bi-folder me-2 text-primary-custom"></i> Adoption Guides</a>
+                <span class="badge bg-light text-secondary border">19</span>
+              </li>
+              <li class="d-flex justify-content-between align-items-center">
+                <a href="#" class="text-secondary-custom"><i class="bi bi-folder me-2 text-primary-custom"></i> Shelter Safety</a>
+                <span class="badge bg-light text-secondary border">6</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Recent posts widget -->
+          <div class="sidebar-widget">
+            <h4 class="sidebar-widget-title fw-bold text-secondary-custom">Recent Posts</h4>
+            <div class="d-flex flex-column gap-3">
+              
+              <!-- Post item 1 -->
+              <div class="d-flex align-items-center gap-3">
+                <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=100&h=100&q=80" class="rounded border" style="width: 60px; height: 60px; object-fit: cover;" alt="Sleeping calico cat">
+                <div>
+                  <h6 class="mb-1 fw-bold small"><a href="#" class="text-secondary-custom">Decoding Cat Tail Flickers</a></h6>
+                  <small class="text-muted d-block" style="font-size:0.75rem;"><i class="bi bi-calendar-event"></i> June 08, 2026</small>
+                </div>
+              </div>
+
+              <!-- Post item 2 -->
+              <div class="d-flex align-items-center gap-3">
+                <img src="https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?auto=format&fit=crop&w=100&h=100&q=80" class="rounded border" style="width: 60px; height: 60px; object-fit: cover;" alt="Rabbit eating lettuce">
+                <div>
+                  <h6 class="mb-1 fw-bold small"><a href="#" class="text-secondary-custom">Rabbit Diet & Veggie Lists</a></h6>
+                  <small class="text-muted d-block" style="font-size:0.75rem;"><i class="bi bi-calendar-event"></i> May 29, 2026</small>
+                </div>
+              </div>
+
+              <!-- Post item 3 -->
+              <div class="d-flex align-items-center gap-3">
+                <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=100&h=100&q=80" class="rounded border" style="width: 60px; height: 60px; object-fit: cover;" alt="Dog checking vet clinic">
+                <div>
+                  <h6 class="mb-1 fw-bold small"><a href="#" class="text-secondary-custom">Rabies Vaccine Timing</a></h6>
+                  <small class="text-muted d-block" style="font-size:0.75rem;"><i class="bi bi-calendar-event"></i> May 24, 2026</small>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Tags widget -->
+          <div class="sidebar-widget">
+            <h4 class="sidebar-widget-title fw-bold text-secondary-custom">Popular Tags</h4>
+            <div class="tag-cloud">
+              <a href="#">#puppies</a>
+              <a href="#">#catcare</a>
+              <a href="#">#fosterpet</a>
+              <a href="#">#dogtraining</a>
+              <a href="#">#vaccines</a>
+              <a href="#">#rabbits</a>
+              <a href="#">#petnutrition</a>
+              <a href="#">#adoptivefamily</a>
+            </div>
+          </div>
+
+        </aside>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer-dark pt-5 pb-4">
+    <div class="container">
+      <div class="row g-4 mb-5">
+        <div class="col-md-4">
+          <h5 class="text-white fw-bold mb-3 d-flex align-items-center">
+            <i class="bi bi-paw-fill text-primary-custom me-2"></i>Happy Paws
+          </h5>
+          <p class="small text-white-50">Happy Paws is a modern, non-profit rescue shelter and adoption center. Founded in 2018, we work hard to rescue strays, provide emergency veterinary care, and find loving homes for abandoned animals.</p>
+          <div class="d-flex gap-3 mt-4">
+            <a href="#" class="fs-5 text-white-50" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="fs-5 text-white-50" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="fs-5 text-white-50" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="fs-5 text-white-50" aria-label="Youtube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-2 offset-md-1">
+          <h5 class="text-white fw-bold mb-3">Quick Links</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2 small">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="pets.html">Available Pets</a></li>
+            <li><a href="adoption.html">Adoption Process</a></li>
+            <li><a href="stories.html">Success Stories</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-md-2">
+          <h5 class="text-white fw-bold mb-3">Pet Categories</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2 small">
+            <li><a href="pets.html?type=dogs">Adoptable Dogs</a></li>
+            <li><a href="pets.html?type=cats">Adoptable Cats</a></li>
+            <li><a href="pets.html?type=birds">Adoptable Birds</a></li>
+            <li><a href="pets.html?type=rabbits">Adoptable Rabbits</a></li>
+            <li><a href="donation.html">Sponsorship Plans</a></li>
+            <li><a href="blog.html">Pet Care Blog</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5 class="text-white fw-bold mb-3">Contact Shelter</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2 small text-white-50">
+            <li class="d-flex align-items-start gap-2">
+              <i class="bi bi-geo-alt-fill text-primary-custom mt-1"></i>
+              <span>1042 Shelter Lane, Petville, CO 80210</span>
+            </li>
+            <li class="d-flex align-items-center gap-2">
+              <i class="bi bi-telephone-fill text-primary-custom"></i>
+              <span>(303) 555-0199</span>
+            </li>
+            <li class="d-flex align-items-center gap-2">
+              <i class="bi bi-envelope-fill text-primary-custom"></i>
+              <span>info@happypawsrescue.org</span>
+            </li>
+            <li class="d-flex align-items-start gap-2">
+              <i class="bi bi-clock-fill text-primary-custom mt-1"></i>
+              <span>Mon - Sat: 9am - 6pm<br>Sun: 11am - 4pm</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr class="border-secondary mb-4">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+          <span class="small text-white-50">&copy; 2026 Happy Paws Pet Adoption Shelter. All rights reserved.</span>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <a href="#" class="small text-white-50 me-3">Privacy Policy</a>
+          <a href="#" class="small text-white-50">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

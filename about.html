@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn about Happy Paws - our rescue story, mission, vision, values, team of veterinarians, and our history of helping adoptable pets.">
+  <title>About Us | Happy Paws Pet Adoption</title>
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg sticky-top glass-navbar py-3">
+    <div class="container">
+      <a class="navbar-brand text-secondary-custom d-flex align-items-center" href="index.html">
+        <i class="bi bi-paw-fill text-primary-custom me-2" aria-hidden="true"></i>
+        <span>Happy Paws</span>
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header border-bottom">
+          <h5 class="offcanvas-title text-secondary-custom d-flex align-items-center" id="offcanvasNavbarLabel">
+            <i class="bi bi-paw-fill text-primary-custom me-2"></i>Happy Paws
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="pets.html">Pets</a></li>
+            <li class="nav-item"><a class="nav-link" href="adoption.html">Adoption</a></li>
+            <li class="nav-item"><a class="nav-link" href="stories.html">Success Stories</a></li>
+            <li class="nav-item"><a class="nav-link" href="volunteer.html">Volunteer</a></li>
+            <li class="nav-item"><a class="nav-link" href="donation.html">Donation</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+          <div class="d-flex gap-2 flex-column flex-lg-row mt-3 mt-lg-0">
+            <a href="login.html" class="btn btn-outline-primary-custom w-100 w-lg-auto">Login</a>
+            <a href="register.html" class="btn btn-primary-custom w-100 w-lg-auto">Register</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="py-5 bg-secondary-custom text-white" id="about-hero">
+    <div class="container py-4 text-center">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb justify-content-center mb-2">
+          <li class="breadcrumb-item"><a href="index.html" class="text-white-50">Home</a></li>
+          <li class="breadcrumb-item active text-white" aria-current="page">About Us</li>
+        </ol>
+      </nav>
+      <h1 class="display-4 text-white fw-bold">Our Story & Mission</h1>
+      <p class="lead text-white-50 col-md-8 mx-auto mb-0">Learn how we started, our core shelter values, and meet the compassionate team dedicated to animal rescue.</p>
+    </div>
+  </section>
+
+  <!-- OUR STORY & VALUES -->
+  <section class="py-5" id="our-story">
+    <div class="container py-4">
+      <div class="row align-items-center g-5 mb-5">
+        <div class="col-lg-6">
+          <h2 class="h1 mb-4">Rescue Journey Since 2018</h2>
+          <p class="text-muted">Happy Paws started with a group of four veterinarians and animal welfare volunteers who took in stray cats and dogs in their own basements and garages. As the shelter requirements grew, we opened our first physical sanctuary in 2020.</p>
+          <p class="text-muted">Today, we operate three regional shelters housing up to 150 dogs, cats, rabbits, and birds. We strive to provide excellent, compassionate shelter support and make matches that last a lifetime.</p>
+          <div class="row g-4 mt-2">
+            <div class="col-sm-6">
+              <div class="d-flex align-items-center gap-2 mb-2">
+                <i class="bi bi-check-circle-fill text-accent-custom fs-5"></i>
+                <h5 class="mb-0 text-secondary-custom">99% Success Match</h5>
+              </div>
+              <p class="small text-muted mb-0">We rarely see pets returned because our vetting matches check your home lifestyle.</p>
+            </div>
+            <div class="col-sm-6">
+              <div class="d-flex align-items-center gap-2 mb-2">
+                <i class="bi bi-check-circle-fill text-accent-custom fs-5"></i>
+                <h5 class="mb-0 text-secondary-custom">100% Medical Care</h5>
+              </div>
+              <p class="small text-muted mb-0">Every single rescue gets immediate vet treatment, surgery, and proper vaccine support.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="img-zoom-container rounded-4 shadow-lg">
+            <img src="https://images.unsplash.com/photo-1581888227599-779811939961?auto=format&fit=crop&w=800&h=600&q=80" class="img-fluid w-100" alt="Shelter workers petting healthy dog">
+          </div>
+        </div>
+      </div>
+
+      <!-- MISSION & VISION CARDS -->
+      <div class="row g-4 mb-5">
+        <div class="col-md-6">
+          <div class="card glass-card p-4 h-100 border-start border-primary-custom border-4">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="bg-primary-custom text-white rounded-circle p-2 d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                <i class="bi bi-flag-fill fs-4"></i>
+              </div>
+              <h3 class="mb-0 text-secondary-custom fw-bold">Our Mission</h3>
+            </div>
+            <p class="text-muted mb-0">To rescue, rehabilitate, and rehome stray, abandoned, or injured animals. We are committed to increasing pet adoption awareness, teaching responsible ownership, and ending pet homelessness in our local communities.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card glass-card p-4 h-100 border-start border-accent-custom border-4">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="bg-accent-custom text-white rounded-circle p-2 d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                <i class="bi bi-eye-fill fs-4"></i>
+              </div>
+              <h3 class="mb-0 text-secondary-custom fw-bold">Our Vision</h3>
+            </div>
+            <p class="text-muted mb-0">A compassionate world where every companion animal is valued, loved, and has a safe home. We envision our shelters as hubs for education, vet health programs, and active volunteer networks.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESCUE JOURNEY TIMELINE -->
+  <section class="py-5 bg-soft-blue-custom" id="timeline-section">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <h2 class="h1 mb-2">Milestones of Our Journey</h2>
+        <p class="text-muted col-md-8 mx-auto">See how we grew from a small volunteer foster circle to one of the region's leading animal welfare shelters.</p>
+      </div>
+
+      <div class="timeline">
+        <!-- Item 1 -->
+        <div class="timeline-container left">
+          <div class="timeline-content">
+            <span class="badge bg-primary-custom mb-2">2018</span>
+            <h4 class="text-secondary-custom fw-bold">The Seed is Planted</h4>
+            <p class="text-muted mb-0">Founded by four veterinary workers. Rescued and placed 45 stray cats and dogs out of foster homes during the initial 12 months.</p>
+          </div>
+        </div>
+        <!-- Item 2 -->
+        <div class="timeline-container right">
+          <div class="timeline-content">
+            <span class="badge bg-accent-custom mb-2">2020</span>
+            <h4 class="text-secondary-custom fw-bold">First Shelter Site</h4>
+            <p class="text-muted mb-0">Purchased our primary facility. Installed comfortable dog kennels, safe cat playrooms, and rabbit habitats, housing up to 60 pets.</p>
+          </div>
+        </div>
+        <!-- Item 3 -->
+        <div class="timeline-container left">
+          <div class="timeline-content">
+            <span class="badge bg-primary-custom mb-2">2022</span>
+            <h4 class="text-secondary-custom fw-bold">Veterinary Expansion</h4>
+            <p class="text-muted mb-0">Added a fully functional, low-cost on-site vet clinic to provide surgeries, microchipping, and vaccines for community pet owners.</p>
+          </div>
+        </div>
+        <!-- Item 4 -->
+        <div class="timeline-container right">
+          <div class="timeline-content">
+            <span class="badge bg-accent-custom mb-2">2025</span>
+            <h4 class="text-secondary-custom fw-bold">1,200+ Lives Saved</h4>
+            <p class="text-muted mb-0">Expanded to three sites and launched regional foster matching programs, crossing a milestone of over 1,200 successful adoptions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM MEMBERS -->
+  <section class="py-5" id="team-section">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <h2 class="h1 mb-2">Meet Our Rescue Leaders</h2>
+        <p class="text-muted col-md-8 mx-auto">Our dedicated staff brings decades of veterinary science, shelter management, and behavioral training experience together.</p>
+      </div>
+      <div class="row g-4">
+        <!-- Team 1 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card card-hover text-center h-100 border-0 shadow-sm">
+            <div class="img-zoom-container">
+              <img src="./images/image copy 9.png" class="card-img-top" alt="Clara Montgomery, Shelter Director">
+            </div>
+            <div class="card-body p-4">
+              <h5 class="card-title text-secondary-custom fw-bold mb-1">Clara Montgomery</h5>
+              <p class="text-primary-custom small fw-semibold mb-3">Shelter Director</p>
+              <p class="card-text text-muted small mb-3">Clara oversees all shelter operations and network relations with 10+ years in non-profit rescue work.</p>
+              <div class="d-flex justify-content-center gap-2">
+                <a href="#" class="btn btn-outline-secondary btn-sm rounded-circle p-1" style="width:32px; height:32px;" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                <a href="#" class="btn btn-outline-secondary btn-sm rounded-circle p-1" style="width:32px; height:32px;" aria-label="Email"><i class="bi bi-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Team 2 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card card-hover text-center h-100 border-0 shadow-sm">
+            <div class="img-zoom-container">
+              <img src="./images/image copy 7.png" class="card-img-top" alt="Dr. Aris Thorne, Lead Veterinarian">
+            </div>
+            <div class="card-body p-4">
+              <h5 class="card-title text-secondary-custom fw-bold mb-1">Dr. Aris Thorne</h5>
+              <p class="text-primary-custom small fw-semibold mb-3">Lead Veterinarian</p>
+              <p class="card-text text-muted small mb-3">Aris manages medical exams, surgical treatments, vaccinations, and shelter sanitation safety protocols.</p>
+              <div class="d-flex justify-content-center gap-2">
+                <a href="#" class="btn btn-outline-secondary btn-sm rounded-circle p-1" style="width:32px; height:32px;" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                <a href="#" class="btn btn-outline-secondary btn-sm rounded-circle p-1" style="width:32px; height:32px;" aria-label="Email"><i class="bi bi-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Team 3 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card card-hover text-center h-100 border-0 shadow-sm">
+            <div class="img-zoom-container">
+              <img src="./images/image copy 5.png" class="card-img-top" alt="Maya Sterling, Volunteer Manager">
+            </div>
+            <div class="card-body p-4">
+              <h5 class="card-title text-secondary-custom fw-bold mb-1">Maya Sterling</h5>
+              <p class="text-primary-custom small fw-semibold mb-3">Volunteer Coordinator</p>
+              <p class="card-text text-muted small mb-3">Maya handles volunteer orientations, schedule allocations, and guides foster boarding systems.</p>
+              <div class="d-flex justify-content-center gap-2">
+                <a href="#" class="btn btn-outline-secondary btn-sm rounded-circle p-1" style="width:32px; height:32px;" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                <a href="#" class="btn btn-outline-secondary btn-sm rounded-circle p-1" style="width:32px; height:32px;" aria-label="Email"><i class="bi bi-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Team 4 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card card-hover text-center h-100 border-0 shadow-sm">
+            <div class="img-zoom-container">
+              <img src="./images/image copy 8.png" class="card-img-top" alt="Marcus Vance, Adoption Coordinator">
+            </div>
+            <div class="card-body p-4">
+              <h5 class="card-title text-secondary-custom fw-bold mb-1">Marcus Vance</h5>
+              <p class="text-primary-custom small fw-semibold mb-3">Adoption Coordinator</p>
+              <p class="card-text text-muted small mb-3">Marcus reviews application paperwork, performs home checks, and leads compatibility consultations.</p>
+              <div class="d-flex justify-content-center gap-2">
+                <a href="#" class="btn btn-outline-secondary btn-sm rounded-circle p-1" style="width:32px; height:32px;" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                <a href="#" class="btn btn-outline-secondary btn-sm rounded-circle p-1" style="width:32px; height:32px;" aria-label="Email"><i class="bi bi-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK CTA -->
+  <section class="py-5 bg-primary-custom text-white" id="volunteer-cta">
+    <div class="container py-4 text-center">
+      <h2 class="display-6 text-white mb-3 fw-bold">Be Part of the Happy Paws Family</h2>
+      <p class="lead text-white-50 col-md-8 mx-auto mb-4">Whether you can volunteer your time, sponsor medical needs, or offer a loving home, your help saves lives.</p>
+      <div class="d-flex justify-content-center gap-3 flex-wrap">
+        <a href="volunteer.html" class="btn btn-secondary-custom btn-lg px-4">Volunteer Time</a>
+        <a href="donation.html" class="btn btn-outline-light btn-lg px-4">Sponsor Rescue</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer-dark pt-5 pb-4">
+    <div class="container">
+      <div class="row g-4 mb-5">
+        <div class="col-md-4">
+          <h5 class="text-white fw-bold mb-3 d-flex align-items-center">
+            <i class="bi bi-paw-fill text-primary-custom me-2"></i>Happy Paws
+          </h5>
+          <p class="small text-white-50">Happy Paws is a modern, non-profit rescue shelter and adoption center. Founded in 2018, we work hard to rescue strays, provide emergency veterinary care, and find loving homes for abandoned animals.</p>
+          <div class="d-flex gap-3 mt-4">
+            <a href="#" class="fs-5 text-white-50" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="fs-5 text-white-50" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="fs-5 text-white-50" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="fs-5 text-white-50" aria-label="Youtube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-2 offset-md-1">
+          <h5 class="text-white fw-bold mb-3">Quick Links</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2 small">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="pets.html">Available Pets</a></li>
+            <li><a href="adoption.html">Adoption Process</a></li>
+            <li><a href="stories.html">Success Stories</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-md-2">
+          <h5 class="text-white fw-bold mb-3">Pet Categories</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2 small">
+            <li><a href="pets.html?type=dogs">Adoptable Dogs</a></li>
+            <li><a href="pets.html?type=cats">Adoptable Cats</a></li>
+            <li><a href="pets.html?type=birds">Adoptable Birds</a></li>
+            <li><a href="pets.html?type=rabbits">Adoptable Rabbits</a></li>
+            <li><a href="donation.html">Sponsorship Plans</a></li>
+            <li><a href="blog.html">Pet Care Blog</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5 class="text-white fw-bold mb-3">Contact Shelter</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2 small text-white-50">
+            <li class="d-flex align-items-start gap-2">
+              <i class="bi bi-geo-alt-fill text-primary-custom mt-1"></i>
+              <span>1042 Shelter Lane, Petville, CO 80210</span>
+            </li>
+            <li class="d-flex align-items-center gap-2">
+              <i class="bi bi-telephone-fill text-primary-custom"></i>
+              <span>(303) 555-0199</span>
+            </li>
+            <li class="d-flex align-items-center gap-2">
+              <i class="bi bi-envelope-fill text-primary-custom"></i>
+              <span>info@happypawsrescue.org</span>
+            </li>
+            <li class="d-flex align-items-start gap-2">
+              <i class="bi bi-clock-fill text-primary-custom mt-1"></i>
+              <span>Mon - Sat: 9am - 6pm<br>Sun: 11am - 4pm</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr class="border-secondary mb-4">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+          <span class="small text-white-50">&copy; 2026 Happy Paws Pet Adoption Shelter. All rights reserved.</span>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <a href="#" class="small text-white-50 me-3">Privacy Policy</a>
+          <a href="#" class="small text-white-50">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

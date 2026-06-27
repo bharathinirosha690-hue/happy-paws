@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Volunteer at Happy Paws Pet Shelter. Apply online to become a dog walker, cat socializer, foster parent, or event helper, and check our upcoming schedule.">
+  <title>Volunteer Opportunities | Happy Paws Pet Adoption</title>
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg sticky-top glass-navbar py-3">
+    <div class="container">
+      <a class="navbar-brand text-secondary-custom d-flex align-items-center" href="index.html">
+        <i class="bi bi-paw-fill text-primary-custom me-2" aria-hidden="true"></i>
+        <span>Happy Paws</span>
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header border-bottom">
+          <h5 class="offcanvas-title text-secondary-custom d-flex align-items-center" id="offcanvasNavbarLabel">
+            <i class="bi bi-paw-fill text-primary-custom me-2"></i>Happy Paws
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="pets.html">Pets</a></li>
+            <li class="nav-item"><a class="nav-link" href="adoption.html">Adoption</a></li>
+            <li class="nav-item"><a class="nav-link" href="stories.html">Success Stories</a></li>
+            <li class="nav-item"><a class="nav-link active" href="volunteer.html">Volunteer</a></li>
+            <li class="nav-item"><a class="nav-link" href="donation.html">Donation</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+          <div class="d-flex gap-2 flex-column flex-lg-row mt-3 mt-lg-0">
+            <a href="login.html" class="btn btn-outline-primary-custom w-100 w-lg-auto">Login</a>
+            <a href="register.html" class="btn btn-primary-custom w-100 w-lg-auto">Register</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="py-5 bg-secondary-custom text-white" id="volunteer-hero">
+    <div class="container py-4 text-center">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb justify-content-center mb-2">
+          <li class="breadcrumb-item"><a href="index.html" class="text-white-50">Home</a></li>
+          <li class="breadcrumb-item active text-white" aria-current="page">Volunteer</li>
+        </ol>
+      </nav>
+      <h1 class="display-4 text-white fw-bold">Volunteer & Save Lives</h1>
+      <p class="lead text-white-50 col-md-8 mx-auto mb-0">Give your time and love. Our shelter relies heavily on community members who feed, walk, foster, and represent our animals.</p>
+    </div>
+  </section>
+
+  <!-- VOLUNTEER OPPORTUNITIES -->
+  <section class="py-5" id="roles-section">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <h2 class="h1 mb-2">How You Can Help</h2>
+        <p class="text-muted col-md-8 mx-auto">Select a role that matches your skills, animal experience, and weekly hours schedule.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Role 1 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card card-hover h-100 border-0 shadow-sm position-relative">
+            <span class="badge bg-primary-custom volunteer-badge py-2 px-3">Popular</span>
+            <div class="img-zoom-container" style="height: 200px;">
+              <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=600&h=400&q=80" class="card-img-top h-100 object-fit-cover" alt="Volunteer dog walking">
+            </div>
+            <div class="card-body p-4">
+              <h5 class="fw-bold text-secondary-custom mb-2">Dog Walker & Socializer</h5>
+              <p class="text-muted small mb-0">Help rescue dogs burn energy! Take them on morning hikes, play fetch in the yard, and practice basic training cues.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Role 2 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card card-hover h-100 border-0 shadow-sm">
+            <div class="img-zoom-container" style="height: 200px;">
+              <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=600&h=400&q=80" class="card-img-top h-100 object-fit-cover" alt="Volunteer cat groomer">
+            </div>
+            <div class="card-body p-4">
+              <h5 class="fw-bold text-secondary-custom mb-2">Cat Socializer</h5>
+              <p class="text-muted small mb-0">Help stray cats adapt to human presence. Brush their coats, play with laser toys, and keep cat tree playrooms neat.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Role 3 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card card-hover h-100 border-0 shadow-sm">
+            <div class="img-zoom-container" style="height: 200px;">
+              <img src="https://images.unsplash.com/photo-1581888227599-779811939961?auto=format&fit=crop&w=600&h=400&q=80" class="card-img-top h-100 object-fit-cover" alt="Foster parents">
+            </div>
+            <div class="card-body p-4">
+              <h5 class="fw-bold text-secondary-custom mb-2">Foster Caregiver</h5>
+              <p class="text-muted small mb-0">Provide a cozy, temporary home for puppies, kittens, or recovering surgical patients. We supply food and vet clinic costs.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Role 4 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card card-hover h-100 border-0 shadow-sm">
+            <div class="img-zoom-container" style="height: 200px;">
+              <img src="https://images.unsplash.com/photo-1522069169874-c58ec4b76be5?auto=format&fit=crop&w=600&h=400&q=80" class="card-img-top h-100 object-fit-cover" alt="Events representation">
+            </div>
+            <div class="card-body p-4">
+              <h5 class="fw-bold text-secondary-custom mb-2">Event Support</h5>
+              <p class="text-muted small mb-0">Represent Happy Paws! Assist with shelter cleanups, manage weekend adoption booths, and run charity donations.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORM & EVENTS GRID -->
+  <section class="py-5 bg-soft-blue-custom" id="volunteer-form-events">
+    <div class="container py-4">
+      <div class="row g-5">
+        
+        <!-- Registration Form -->
+        <div class="col-lg-7">
+          <div class="card border-0 shadow-sm p-4">
+            <h3 class="fw-bold text-secondary-custom mb-3"><i class="bi bi-card-text text-primary-custom me-2"></i>Sign Up to Volunteer</h3>
+            <p class="text-muted small mb-4">Complete the fields below. Our coordinators host volunteer orientation classes on a bi-weekly schedule.</p>
+            <form id="volunteerRegForm">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="volName" class="form-label fw-semibold">Full Name *</label>
+                  <input type="text" id="volName" class="form-control" required placeholder="Jane Smith">
+                </div>
+                <div class="col-md-6">
+                  <label for="volEmail" class="form-label fw-semibold">Email *</label>
+                  <input type="email" id="volEmail" class="form-control" required placeholder="jane@example.com">
+                </div>
+                <div class="col-md-6">
+                  <label for="volPhone" class="form-label fw-semibold">Phone *</label>
+                  <input type="tel" id="volPhone" class="form-control" required placeholder="(555) 555-0145">
+                </div>
+                <div class="col-md-6">
+                  <label for="volAge" class="form-label fw-semibold">Age Group *</label>
+                  <select id="volAge" class="form-select" required>
+                    <option value="" disabled selected>Select age group</option>
+                    <option value="under18">Under 18 Years</option>
+                    <option value="adult">18 - 50 Years</option>
+                    <option value="senior">Over 50 Years</option>
+                  </select>
+                </div>
+
+                <!-- Interests Checkboxes -->
+                <div class="col-12">
+                  <label class="form-label fw-semibold d-block">Areas of Interest *</label>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="intDog" value="dogs">
+                    <label class="form-check-label" for="intDog">Dog Walking</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="intCat" value="cats">
+                    <label class="form-check-label" for="intCat">Cat Socializing</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="intFoster" value="foster">
+                    <label class="form-check-label" for="intFoster">Fostering</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="intEvents" value="events">
+                    <label class="form-check-label" for="intEvents">Events</label>
+                  </div>
+                </div>
+
+                <!-- Availability -->
+                <div class="col-12">
+                  <label class="form-label fw-semibold d-block">Availability *</label>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="availWd" value="weekday">
+                    <label class="form-check-label" for="availWd">Weekday Daytime</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="availWe" value="weekend">
+                    <label class="form-check-label" for="availWe">Weekend Daytime</label>
+                  </div>
+                </div>
+
+                <!-- Textarea -->
+                <div class="col-12">
+                  <label for="volBio" class="form-label fw-semibold">Why do you want to help and what experience do you have? *</label>
+                  <textarea id="volBio" class="form-control" rows="4" required placeholder="Tell us about your previous experience with pets, your schedule limitations, or why you want to support shelter animals..."></textarea>
+                </div>
+
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary-custom w-100 py-3 shadow">Submit Volunteer Application</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Upcoming Events -->
+        <div class="col-lg-5">
+          <h3 class="fw-bold text-secondary-custom mb-4"><i class="bi bi-calendar-event text-primary-custom me-2"></i>Upcoming Events</h3>
+          <div class="d-flex flex-column gap-3">
+            
+            <!-- Event 1 -->
+            <div class="card border-0 shadow-sm p-3 border-start border-primary-custom border-4">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <span class="badge bg-soft-blue-custom text-secondary-custom fw-semibold">June 20, 2026</span>
+                <span class="text-muted small"><i class="bi bi-clock"></i> 6:00 PM</span>
+              </div>
+              <h5 class="fw-bold text-secondary-custom mb-1">Volunteer Orientation Class</h5>
+              <p class="small text-muted mb-0"><i class="bi bi-geo-alt"></i> Main Shelter Office. Basic instruction overview for dog handling and animal playroom guidelines.</p>
+            </div>
+
+            <!-- Event 2 -->
+            <div class="card border-0 shadow-sm p-3 border-start border-accent-custom border-4">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <span class="badge bg-soft-blue-custom text-secondary-custom fw-semibold">June 27, 2026</span>
+                <span class="text-muted small"><i class="bi bi-clock"></i> 9:00 AM</span>
+              </div>
+              <h5 class="fw-bold text-secondary-custom mb-1">Monthly Shelter Cleanup Day</h5>
+              <p class="small text-muted mb-0"><i class="bi bi-geo-alt"></i> Downtown shelter site. Gardening, fence repair, kennel sanitizing, and tree planting.</p>
+            </div>
+
+            <!-- Event 3 -->
+            <div class="card border-0 shadow-sm p-3 border-start border-primary-custom border-4">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <span class="badge bg-soft-blue-custom text-secondary-custom fw-semibold">July 04, 2026</span>
+                <span class="text-muted small"><i class="bi bi-clock"></i> 11:00 AM</span>
+              </div>
+              <h5 class="fw-bold text-secondary-custom mb-1">Mobile Adoption Fair</h5>
+              <p class="small text-muted mb-0"><i class="bi bi-geo-alt"></i> City Central Plaza. Setting up adoption booths, guiding visitors, and handling pets.</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer-dark pt-5 pb-4">
+    <div class="container">
+      <div class="row g-4 mb-5">
+        <div class="col-md-4">
+          <h5 class="text-white fw-bold mb-3 d-flex align-items-center">
+            <i class="bi bi-paw-fill text-primary-custom me-2"></i>Happy Paws
+          </h5>
+          <p class="small text-white-50">Happy Paws is a modern, non-profit rescue shelter and adoption center. Founded in 2018, we work hard to rescue strays, provide emergency veterinary care, and find loving homes for abandoned animals.</p>
+          <div class="d-flex gap-3 mt-4">
+            <a href="#" class="fs-5 text-white-50" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="fs-5 text-white-50" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="fs-5 text-white-50" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="fs-5 text-white-50" aria-label="Youtube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-2 offset-md-1">
+          <h5 class="text-white fw-bold mb-3">Quick Links</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2 small">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="pets.html">Available Pets</a></li>
+            <li><a href="adoption.html">Adoption Process</a></li>
+            <li><a href="stories.html">Success Stories</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-md-2">
+          <h5 class="text-white fw-bold mb-3">Pet Categories</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2 small">
+            <li><a href="pets.html?type=dogs">Adoptable Dogs</a></li>
+            <li><a href="pets.html?type=cats">Adoptable Cats</a></li>
+            <li><a href="pets.html?type=birds">Adoptable Birds</a></li>
+            <li><a href="pets.html?type=rabbits">Adoptable Rabbits</a></li>
+            <li><a href="donation.html">Sponsorship Plans</a></li>
+            <li><a href="blog.html">Pet Care Blog</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5 class="text-white fw-bold mb-3">Contact Shelter</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2 small text-white-50">
+            <li class="d-flex align-items-start gap-2">
+              <i class="bi bi-geo-alt-fill text-primary-custom mt-1"></i>
+              <span>1042 Shelter Lane, Petville, CO 80210</span>
+            </li>
+            <li class="d-flex align-items-center gap-2">
+              <i class="bi bi-telephone-fill text-primary-custom"></i>
+              <span>(303) 555-0199</span>
+            </li>
+            <li class="d-flex align-items-center gap-2">
+              <i class="bi bi-envelope-fill text-primary-custom"></i>
+              <span>info@happypawsrescue.org</span>
+            </li>
+            <li class="d-flex align-items-start gap-2">
+              <i class="bi bi-clock-fill text-primary-custom mt-1"></i>
+              <span>Mon - Sat: 9am - 6pm<br>Sun: 11am - 4pm</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr class="border-secondary mb-4">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+          <span class="small text-white-50">&copy; 2026 Happy Paws Pet Adoption Shelter. All rights reserved.</span>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <a href="#" class="small text-white-50 me-3">Privacy Policy</a>
+          <a href="#" class="small text-white-50">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Interactive script -->
+  <script>
+    document.getElementById('volunteerRegForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you! Your volunteer application has been submitted. Our coordinators will review your availability and contact you for the next Orientation Class!');
+      this.reset();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Read our step-by-step pet adoption guide. View housing and vetting requirements, necessary checklist documents, and browse frequently asked questions.">
+  <title>Adoption Guide & FAQ | Happy Paws Pet Adoption</title>
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg sticky-top glass-navbar py-3">
+    <div class="container">
+      <a class="navbar-brand text-secondary-custom d-flex align-items-center" href="index.html">
+        <i class="bi bi-paw-fill text-primary-custom me-2" aria-hidden="true"></i>
+        <span>Happy Paws</span>
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header border-bottom">
+          <h5 class="offcanvas-title text-secondary-custom d-flex align-items-center" id="offcanvasNavbarLabel">
+            <i class="bi bi-paw-fill text-primary-custom me-2"></i>Happy Paws
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="pets.html">Pets</a></li>
+            <li class="nav-item"><a class="nav-link active" href="adoption.html">Adoption</a></li>
+            <li class="nav-item"><a class="nav-link" href="stories.html">Success Stories</a></li>
+            <li class="nav-item"><a class="nav-link" href="volunteer.html">Volunteer</a></li>
+            <li class="nav-item"><a class="nav-link" href="donation.html">Donation</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+          <div class="d-flex gap-2 flex-column flex-lg-row mt-3 mt-lg-0">
+            <a href="login.html" class="btn btn-outline-primary-custom w-100 w-lg-auto">Login</a>
+            <a href="register.html" class="btn btn-primary-custom w-100 w-lg-auto">Register</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="py-5 bg-secondary-custom text-white" id="adoption-hero">
+    <div class="container py-4 text-center">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb justify-content-center mb-2">
+          <li class="breadcrumb-item"><a href="index.html" class="text-white-50">Home</a></li>
+          <li class="breadcrumb-item active text-white" aria-current="page">Adoption Process</li>
+        </ol>
+      </nav>
+      <h1 class="display-4 text-white fw-bold">Step-by-Step Adoption Guide</h1>
+      <p class="lead text-white-50 col-md-8 mx-auto mb-0">Learn about our requirements, housing checks, fees, and read answers to common questions about animal rescue matching.</p>
+    </div>
+  </section>
+
+  <!-- STEP BY STEP PROCESS -->
+  <section class="py-5" id="process-timeline">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <h2 class="h1 mb-2">Our Adoption Timeline</h2>
+        <p class="text-muted col-md-8 mx-auto">From the moment you pick a potential pet to bringing them home, here is exactly what to expect from us.</p>
+      </div>
+
+      <div class="timeline">
+        <!-- Step 1 -->
+        <div class="timeline-container left">
+          <div class="timeline-content">
+            <span class="badge bg-primary-custom mb-2">Step 1</span>
+            <h4 class="text-secondary-custom fw-bold">Find Your Match</h4>
+            <p class="text-muted mb-0">Browse through our online database or visit our shelter site. Spend time interacting with different dogs, cats, or rabbits to verify if their size, energy, and temperament align with your lifestyle.</p>
+          </div>
+        </div>
+        <!-- Step 2 -->
+        <div class="timeline-container right">
+          <div class="timeline-content">
+            <span class="badge bg-accent-custom mb-2">Step 2</span>
+            <h4 class="text-secondary-custom fw-bold">Submit Application</h4>
+            <p class="text-muted mb-0">Fill out our vetting application form. We require details about your housing agreement (own/rent), references from local veterinarians (if you have other pets), and details about household residents.</p>
+          </div>
+        </div>
+        <!-- Step 3 -->
+        <div class="timeline-container left">
+          <div class="timeline-content">
+            <span class="badge bg-primary-custom mb-2">Step 3</span>
+            <h4 class="text-secondary-custom fw-bold">Coordinators Interview</h4>
+            <p class="text-muted mb-0">Our adoption specialists will call you for a brief phone conversation. We confirm landlord permissions, review training expectations, and answer any specific questions about diet, vaccines, or behavior.</p>
+          </div>
+        </div>
+        <!-- Step 4 -->
+        <div class="timeline-container right">
+          <div class="timeline-content">
+            <span class="badge bg-accent-custom mb-2">Step 4</span>
+            <h4 class="text-secondary-custom fw-bold">Meet & Greet & Take Home</h4>
+            <p class="text-muted mb-0">Schedule an in-person meeting with your family (and other dogs if you have any). If all goes beautifully, finalize the paperwork, complete the sponsorship adoption fee, and welcome your new member home!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REQUIREMENTS & DOCUMENTS -->
+  <section class="py-5 bg-soft-blue-custom" id="requirements-section">
+    <div class="container py-4">
+      <div class="row g-5">
+        
+        <!-- Requirements Col -->
+        <div class="col-lg-6">
+          <div class="card border-0 shadow-sm p-4 h-100">
+            <h3 class="fw-bold text-secondary-custom mb-4 d-flex align-items-center">
+              <i class="bi bi-shield-exclamation text-primary-custom me-2 fs-3"></i>Adoption Requirements
+            </h3>
+            <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
+              <li class="d-flex align-items-start gap-3">
+                <i class="bi bi-check-circle-fill text-accent-custom fs-5 mt-1"></i>
+                <div>
+                  <h5 class="mb-1 text-secondary-custom">Minimum Age Limit</h5>
+                  <p class="text-muted small mb-0">You must be at least 21 years old and possess a valid government-issued photo ID.</p>
+                </div>
+              </li>
+              <li class="d-flex align-items-start gap-3">
+                <i class="bi bi-check-circle-fill text-accent-custom fs-5 mt-1"></i>
+                <div>
+                  <h5 class="mb-1 text-secondary-custom">Housing Agreement Checks</h5>
+                  <p class="text-muted small mb-0">If you lease, you must show a copy of your rental contract permitting pets of the specific size and breed.</p>
+                </div>
+              </li>
+              <li class="d-flex align-items-start gap-3">
+                <i class="bi bi-check-circle-fill text-accent-custom fs-5 mt-1"></i>
+                <div>
+                  <h5 class="mb-1 text-secondary-custom">Veterinary Vetting</h5>
+                  <p class="text-muted small mb-0">Existing animals must be up to date with spaying procedures and primary rabies vaccinations.</p>
+                </div>
+              </li>
+              <li class="d-flex align-items-start gap-3">
+                <i class="bi bi-check-circle-fill text-accent-custom fs-5 mt-1"></i>
+                <div>
+                  <h5 class="mb-1 text-secondary-custom">Commitment to Care</h5>
+                  <p class="text-muted small mb-0">A willingness to provide appropriate exercise, nutritional balance, vet treatment, and training space.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Documents Col -->
+        <div class="col-lg-6">
+          <div class="card border-0 shadow-sm p-4 h-100">
+            <h3 class="fw-bold text-secondary-custom mb-4 d-flex align-items-center">
+              <i class="bi bi-folder2-open text-primary-custom me-2 fs-3"></i>Documents to Bring Along
+            </h3>
+            <p class="text-muted mb-4">Please bring these items to your shelter appointment or attach them during the online application review to expedite approval:</p>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="p-3 bg-light border rounded-3 text-center h-100">
+                  <i class="bi bi-person-bounding-box text-primary-custom fs-2 d-block mb-2"></i>
+                  <h6 class="fw-bold mb-1">Government ID</h6>
+                  <p class="small text-muted mb-0">Drivers license, passport, or state identity card.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="p-3 bg-light border rounded-3 text-center h-100">
+                  <i class="bi bi-receipt text-primary-custom fs-2 d-block mb-2"></i>
+                  <h6 class="fw-bold mb-1">Utility Bill</h6>
+                  <p class="small text-muted mb-0">Proof of residency matching current address details.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="p-3 bg-light border rounded-3 text-center h-100">
+                  <i class="bi bi-file-earmark-text text-primary-custom fs-2 d-block mb-2"></i>
+                  <h6 class="fw-bold mb-1">Lease Copy</h6>
+                  <p class="small text-muted mb-0">Rental agreement copy specifying pet policies.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="p-3 bg-light border rounded-3 text-center h-100">
+                  <i class="bi bi-telephone-inbound text-primary-custom fs-2 d-block mb-2"></i>
+                  <h6 class="fw-bold mb-1">Landlord Info</h6>
+                  <p class="small text-muted mb-0">Contact details for housing landlord check verification.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQS (ACCORDION) -->
+  <section class="py-5" id="faqs-accordion">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <h2 class="h1 mb-2">Frequently Asked Questions</h2>
+        <p class="text-muted col-md-8 mx-auto">Get answers to the most common queries about adoption fees, out-of-state rules, trial runs, and return policies.</p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="accordion accordion-flush shadow-sm rounded-4 overflow-hidden border" id="adoptionFAQs">
+            
+            <!-- Question 1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faq-h1">
+                <button class="accordion-button fw-bold text-secondary-custom py-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq-c1" aria-expanded="true" aria-controls="faq-c1">
+                  How much are adoption fees and what do they cover?
+                </button>
+              </h2>
+              <div id="faq-c1" class="accordion-collapse collapse show" aria-labelledby="faq-h1" data-bs-parent="#adoptionFAQs">
+                <div class="accordion-body text-muted">
+                  Adoption fees range from $150 to $300 depending on the animal's type, breed group, and age (puppies and kittens have higher fees to help cover primary vaccine sets). The fees cover: spaying/neutering procedure, complete DHPP/FVRCP vaccine sets, rabies shot, microchipping registration, deworming, heartworm testing, and general physical checkup.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faq-h2">
+                <button class="accordion-button collapsed fw-bold text-secondary-custom py-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq-c2" aria-expanded="false" aria-controls="faq-c2">
+                  Can I adopt a pet if I live in a rental apartment?
+                </button>
+              </h2>
+              <div id="faq-c2" class="accordion-collapse collapse" aria-labelledby="faq-h2" data-bs-parent="#adoptionFAQs">
+                <div class="accordion-body text-muted">
+                  Absolutely! We rehome many animals into apartments. The critical factor is matching the right pet (low energy, quiet demeanor, suitable size) to your space. We check lease documentation stating you have permission and verify breed/weight caps.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faq-h3">
+                <button class="accordion-button collapsed fw-bold text-secondary-custom py-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq-c3" aria-expanded="false" aria-controls="faq-c3">
+                  How long does the approval process take?
+                </button>
+              </h2>
+              <div id="faq-c3" class="accordion-collapse collapse" aria-labelledby="faq-h3" data-bs-parent="#adoptionFAQs">
+                <div class="accordion-body text-muted">
+                  The vetting review usually takes between 48 and 72 hours. Delays typically happen if we cannot reach references, landlords, or your prior veterinarian. You can speed up reviews by informing your landlord and vet clinic that Happy Paws will be calling.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faq-h4">
+                <button class="accordion-button collapsed fw-bold text-secondary-custom py-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq-c4" aria-expanded="false" aria-controls="faq-c4">
+                  What is your return policy if the matching doesn't work out?
+                </button>
+              </h2>
+              <div id="faq-c4" class="accordion-collapse collapse" aria-labelledby="faq-h4" data-bs-parent="#adoptionFAQs">
+                <div class="accordion-body text-muted">
+                  We offer a 14-day trial match window. If there are behavioral adjustments, we offer training consultations. If it's clear the match isn't a fit, the animal must be returned to Happy Paws. We will refund the adoption fee (within 14 days) and work to find a better fit.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faq-h5">
+                <button class="accordion-button collapsed fw-bold text-secondary-custom py-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq-c5" aria-expanded="false" aria-controls="faq-c5">
+                  Do you allow out-of-state adoptions?
+                </button>
+              </h2>
+              <div id="faq-c5" class="accordion-collapse collapse" aria-labelledby="faq-h5" data-bs-parent="#adoptionFAQs">
+                <div class="accordion-body text-muted">
+                  Yes, but we do not ship animals under any circumstances. You must travel to our physical Colorado shelter sites to complete the application, meet-and-greet sessions, and drive or fly back home with the companion safely.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK CTA -->
+  <section class="py-5 bg-secondary-custom text-white" id="adoption-cta">
+    <div class="container py-4 text-center">
+      <h2 class="display-6 text-white mb-3 fw-bold">Ready to Find Your Companion?</h2>
+      <p class="lead text-white-50 col-md-8 mx-auto mb-4">Start browsing our available dogs, cats, birds, and rabbits, or contact our adoption helpdesk for questions.</p>
+      <div class="d-flex justify-content-center gap-3 flex-wrap">
+        <a href="pets.html" class="btn btn-primary-custom btn-lg px-4">Browse Adoptable Pets</a>
+        <a href="contact.html" class="btn btn-outline-light btn-lg px-4">Contact Adoption Center</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer-dark pt-5 pb-4">
+    <div class="container">
+      <div class="row g-4 mb-5">
+        <div class="col-md-4">
+          <h5 class="text-white fw-bold mb-3 d-flex align-items-center">
+            <i class="bi bi-paw-fill text-primary-custom me-2"></i>Happy Paws
+          </h5>
+          <p class="small text-white-50">Happy Paws is a modern, non-profit rescue shelter and adoption center. Founded in 2018, we work hard to rescue strays, provide emergency veterinary care, and find loving homes for abandoned animals.</p>
+          <div class="d-flex gap-3 mt-4">
+            <a href="#" class="fs-5 text-white-50" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="fs-5 text-white-50" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="fs-5 text-white-50" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="fs-5 text-white-50" aria-label="Youtube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-2 offset-md-1">
+          <h5 class="text-white fw-bold mb-3">Quick Links</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2 small">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="pets.html">Available Pets</a></li>
+            <li><a href="adoption.html">Adoption Process</a></li>
+            <li><a href="stories.html">Success Stories</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-md-2">
+          <h5 class="text-white fw-bold mb-3">Pet Categories</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2 small">
+            <li><a href="pets.html?type=dogs">Adoptable Dogs</a></li>
+            <li><a href="pets.html?type=cats">Adoptable Cats</a></li>
+            <li><a href="pets.html?type=birds">Adoptable Birds</a></li>
+            <li><a href="pets.html?type=rabbits">Adoptable Rabbits</a></li>
+            <li><a href="donation.html">Sponsorship Plans</a></li>
+            <li><a href="blog.html">Pet Care Blog</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5 class="text-white fw-bold mb-3">Contact Shelter</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2 small text-white-50">
+            <li class="d-flex align-items-start gap-2">
+              <i class="bi bi-geo-alt-fill text-primary-custom mt-1"></i>
+              <span>1042 Shelter Lane, Petville, CO 80210</span>
+            </li>
+            <li class="d-flex align-items-center gap-2">
+              <i class="bi bi-telephone-fill text-primary-custom"></i>
+              <span>(303) 555-0199</span>
+            </li>
+            <li class="d-flex align-items-center gap-2">
+              <i class="bi bi-envelope-fill text-primary-custom"></i>
+              <span>info@happypawsrescue.org</span>
+            </li>
+            <li class="d-flex align-items-start gap-2">
+              <i class="bi bi-clock-fill text-primary-custom mt-1"></i>
+              <span>Mon - Sat: 9am - 6pm<br>Sun: 11am - 4pm</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr class="border-secondary mb-4">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+          <span class="small text-white-50">&copy; 2026 Happy Paws Pet Adoption Shelter. All rights reserved.</span>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <a href="#" class="small text-white-50 me-3">Privacy Policy</a>
+          <a href="#" class="small text-white-50">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse our available pets for adoption. Filters dogs, cats, birds, and rabbits by breed, age, gender, and shelter location.">
+  <title>Available Pets | Happy Paws Pet Adoption</title>
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg sticky-top glass-navbar py-3">
+    <div class="container">
+      <a class="navbar-brand text-secondary-custom d-flex align-items-center" href="index.html">
+        <i class="bi bi-paw-fill text-primary-custom me-2" aria-hidden="true"></i>
+        <span>Happy Paws</span>
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header border-bottom">
+          <h5 class="offcanvas-title text-secondary-custom d-flex align-items-center" id="offcanvasNavbarLabel">
+            <i class="bi bi-paw-fill text-primary-custom me-2"></i>Happy Paws
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link active" href="pets.html">Pets</a></li>
+            <li class="nav-item"><a class="nav-link" href="adoption.html">Adoption</a></li>
+            <li class="nav-item"><a class="nav-link" href="stories.html">Success Stories</a></li>
+            <li class="nav-item"><a class="nav-link" href="volunteer.html">Volunteer</a></li>
+            <li class="nav-item"><a class="nav-link" href="donation.html">Donation</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+          <div class="d-flex gap-2 flex-column flex-lg-row mt-3 mt-lg-0">
+            <a href="login.html" class="btn btn-outline-primary-custom w-100 w-lg-auto">Login</a>
+            <a href="register.html" class="btn btn-primary-custom w-100 w-lg-auto">Register</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="py-4 bg-secondary-custom text-white" id="pets-hero">
+    <div class="container text-center">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb justify-content-center mb-2">
+          <li class="breadcrumb-item"><a href="index.html" class="text-white-50">Home</a></li>
+          <li class="breadcrumb-item active text-white" aria-current="page">Available Pets</li>
+        </ol>
+      </nav>
+      <h1 class="h2 text-white fw-bold mb-0">Find Your Companion</h1>
+    </div>
+  </section>
+
+  <!-- PETS CONTENT SECTION -->
+  <main class="py-5" id="pets-main-content">
+    <div class="container">
+      
+      <!-- MOBILE FILTER TOGGLER -->
+      <div class="d-lg-none mb-4">
+        <button class="btn btn-primary-custom w-100 d-flex align-items-center justify-content-center gap-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#filterSidebar" aria-controls="filterSidebar">
+          <i class="bi bi-funnel"></i> Filter & Search Pets
+        </button>
+      </div>
+
+      <div class="row g-4">
+        
+        <!-- SIDEBAR FILTERS (DESKTOP) -->
+        <aside class="col-lg-3 d-none d-lg-block">
+          <div class="sidebar-widget">
+            <h4 class="sidebar-widget-title fw-bold text-secondary-custom">Filters</h4>
+            <form id="desktopFilterForm">
+              
+              <!-- Search Input -->
+              <div class="mb-4">
+                <label for="petKeyword" class="form-label fw-semibold">Search by Name</label>
+                <div class="input-group">
+                  <input type="text" id="petKeyword" class="form-control" placeholder="e.g. Luna">
+                  <button class="btn btn-primary-custom px-2" type="button" aria-label="Search"><i class="bi bi-search"></i></button>
+                </div>
+              </div>
+
+              <!-- Animal Type -->
+              <div class="mb-4">
+                <label for="animalType" class="form-label fw-semibold">Animal Type</label>
+                <select id="animalType" class="form-select">
+                  <option selected>All Types</option>
+                  <option>Dogs</option>
+                  <option>Cats</option>
+                  <option>Birds</option>
+                  <option>Rabbits</option>
+                  <option>Hamsters</option>
+                </select>
+              </div>
+
+              <!-- Gender -->
+              <div class="mb-4">
+                <label class="form-label fw-semibold d-block">Gender</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="male" id="genderMale" checked>
+                  <label class="form-check-label" for="genderMale">Male</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="female" id="genderFemale" checked>
+                  <label class="form-check-label" for="genderFemale">Female</label>
+                </div>
+              </div>
+
+              <!-- Age Group -->
+              <div class="mb-4">
+                <label for="ageGroup" class="form-label fw-semibold">Age Group</label>
+                <select id="ageGroup" class="form-select">
+                  <option selected>Any Age</option>
+                  <option>Baby (Puppy/Kitten)</option>
+                  <option>Young</option>
+                  <option>Adult</option>
+                  <option>Senior</option>
+                </select>
+              </div>
+
+              <!-- Location -->
+              <div class="mb-4">
+                <label for="locationSite" class="form-label fw-semibold">Shelter Site</label>
+                <select id="locationSite" class="form-select">
+                  <option selected>All Sites</option>
+                  <option>Downtown Hub</option>
+                  <option>Eastside Shelter</option>
+                  <option>Westside Network</option>
+                </select>
+              </div>
+
+              <!-- Reset Button -->
+              <button type="reset" class="btn btn-outline-secondary-custom w-100 mt-2">Reset Filters</button>
+            </form>
+          </div>
+        </aside>
+
+        <!-- PETS GRID & TOP TABS -->
+        <div class="col-lg-9">
+          
+          <!-- Quick category pills -->
+          <div class="d-flex flex-wrap gap-2 mb-4 justify-content-center justify-content-lg-start">
+            <button class="btn btn-primary-custom px-4">All Pets</button>
+            <button class="btn btn-outline-secondary-custom px-4">Dogs</button>
+            <button class="btn btn-outline-secondary-custom px-4">Cats</button>
+            <button class="btn btn-outline-secondary-custom px-4">Birds</button>
+            <button class="btn btn-outline-secondary-custom px-4">Rabbits</button>
+          </div>
+
+          <!-- Pet Cards Grid -->
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            
+            <!-- Card 1 -->
+            <div class="col">
+              <div class="card card-hover h-100">
+                <div class="img-zoom-container">
+                  <span class="badge bg-success position-absolute top-0 start-0 m-3 z-3 py-2 px-3 rounded-pill">Available</span>
+                  <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=600&h=450&q=80" class="card-img-top" alt="Luna the Golden Retriever">
+                </div>
+                <div class="card-body p-4">
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <h4 class="card-title mb-0">Luna</h4>
+                    <span class="badge bg-light text-secondary border py-2 px-3 rounded-pill"><i class="bi bi-gender-female text-danger"></i> Female</span>
+                  </div>
+                  <p class="text-muted small mb-3"><i class="bi bi-info-circle me-1"></i> Golden Retriever &bull; 2 Years</p>
+                  <p class="card-text text-muted mb-4 small">Luna is energetic, friendly, and absolutely loves kids and yard play.</p>
+                  <div class="d-flex justify-content-between align-items-center pt-3 border-top">
+                    <a href="pet-details.html" class="btn btn-outline-secondary-custom btn-sm w-50 me-2">Details</a>
+                    <a href="pet-details.html?adopt=true" class="btn btn-primary-custom btn-sm w-50">Adopt</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col">
+              <div class="card card-hover h-100">
+                <div class="img-zoom-container">
+                  <span class="badge bg-warning text-dark position-absolute top-0 start-0 m-3 z-3 py-2 px-3 rounded-pill">Pending</span>
+                  <img src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?auto=format&fit=crop&w=600&h=450&q=80" class="card-img-top" alt="Oliver the Calico Cat">
+                </div>
+                <div class="card-body p-4">
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <h4 class="card-title mb-0">Oliver</h4>
+                    <span class="badge bg-light text-secondary border py-2 px-3 rounded-pill"><i class="bi bi-gender-male text-primary"></i> Male</span>
+                  </div>
+                  <p class="text-muted small mb-3"><i class="bi bi-info-circle me-1"></i> Domestic Shorthair &bull; 1 Year</p>
+                  <p class="card-text text-muted mb-4 small">Oliver is quiet, gentle, and enjoys resting cozy on friendly laps.</p>
+                  <div class="d-flex justify-content-between align-items-center pt-3 border-top">
+                    <a href="pet-details.html" class="btn btn-outline-secondary-custom btn-sm w-50 me-2">Details</a>
+                    <a href="pet-details.html?adopt=true" class="btn btn-primary-custom btn-sm w-50 disabled">Pending</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col">
+              <div class="card card-hover h-100">
+                <div class="img-zoom-container">
+                  <span class="badge bg-success position-absolute top-0 start-0 m-3 z-3 py-2 px-3 rounded-pill">Available</span>
+                  <img src="https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?auto=format&fit=crop&w=600&h=450&q=80" class="card-img-top" alt="Bugs the Rabbit">
+                </div>
+                <div class="card-body p-4">
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <h4 class="card-title mb-0">Bugs</h4>
+                    <span class="badge bg-light text-secondary border py-2 px-3 rounded-pill"><i class="bi bi-gender-male text-primary"></i> Male</span>
+                  </div>
+                  <p class="text-muted small mb-3"><i class="bi bi-info-circle me-1"></i> Angora Rabbit &bull; 6 Months</p>
+                  <p class="card-text text-muted mb-4 small">Bugs is tiny, curious, fluffy, and loves munching on crisp veggies.</p>
+                  <div class="d-flex justify-content-between align-items-center pt-3 border-top">
+                    <a href="pet-details.html" class="btn btn-outline-secondary-custom btn-sm w-50 me-2">Details</a>
+                    <a href="pet-details.html?adopt=true" class="btn btn-primary-custom btn-sm w-50">Adopt</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col">
+              <div class="card card-hover h-100">
+                <div class="img-zoom-container">
+                  <span class="badge bg-success position-absolute top-0 start-0 m-3 z-3 py-2 px-3 rounded-pill">Available</span>
+                  <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=600&h=450&q=80" class="card-img-top" alt="Bella the Beagle">
+                </div>
+                <div class="card-body p-4">
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <h4 class="card-title mb-0">Bella</h4>
+                    <span class="badge bg-light text-secondary border py-2 px-3 rounded-pill"><i class="bi bi-gender-female text-danger"></i> Female</span>
+                  </div>
+                  <p class="text-muted small mb-3"><i class="bi bi-info-circle me-1"></i> Beagle Breed &bull; 3 Years</p>
+                  <p class="card-text text-muted mb-4 small">Bella is a scent-loving beagle who is social, vocal, and loves trail walks.</p>
+                  <div class="d-flex justify-content-between align-items-center pt-3 border-top">
+                    <a href="pet-details.html" class="btn btn-outline-secondary-custom btn-sm w-50 me-2">Details</a>
+                    <a href="pet-details.html?adopt=true" class="btn btn-primary-custom btn-sm w-50">Adopt</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col">
+              <div class="card card-hover h-100">
+                <div class="img-zoom-container">
+                  <span class="badge bg-success position-absolute top-0 start-0 m-3 z-3 py-2 px-3 rounded-pill">Available</span>
+                  <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=600&h=450&q=80" class="card-img-top" alt="Chloe the Siamese Cat">
+                </div>
+                <div class="card-body p-4">
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <h4 class="card-title mb-0">Chloe</h4>
+                    <span class="badge bg-light text-secondary border py-2 px-3 rounded-pill"><i class="bi bi-gender-female text-danger"></i> Female</span>
+                  </div>
+                  <p class="text-muted small mb-3"><i class="bi bi-info-circle me-1"></i> Siamese Cat &bull; 2 Years</p>
+                  <p class="card-text text-muted mb-4 small">Chloe is sleek, talkative, intelligent, and loves playing with toy mice.</p>
+                  <div class="d-flex justify-content-between align-items-center pt-3 border-top">
+                    <a href="pet-details.html" class="btn btn-outline-secondary-custom btn-sm w-50 me-2">Details</a>
+                    <a href="pet-details.html?adopt=true" class="btn btn-primary-custom btn-sm w-50">Adopt</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col">
+              <div class="card card-hover h-100">
+                <div class="img-zoom-container">
+                  <span class="badge bg-success position-absolute top-0 start-0 m-3 z-3 py-2 px-3 rounded-pill">Available</span>
+                  <img src="https://images.unsplash.com/photo-1589941013453-ec89f33b5e95?auto=format&fit=crop&w=600&h=450&q=80" class="card-img-top" alt="Rocky the German Shepherd">
+                </div>
+                <div class="card-body p-4">
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <h4 class="card-title mb-0">Rocky</h4>
+                    <span class="badge bg-light text-secondary border py-2 px-3 rounded-pill"><i class="bi bi-gender-male text-primary"></i> Male</span>
+                  </div>
+                  <p class="text-muted small mb-3"><i class="bi bi-info-circle me-1"></i> German Shepherd &bull; 4 Years</p>
+                  <p class="card-text text-muted mb-4 small">Rocky is highly trained, loyal, protective, and needs an active home.</p>
+                  <div class="d-flex justify-content-between align-items-center pt-3 border-top">
+                    <a href="pet-details.html" class="btn btn-outline-secondary-custom btn-sm w-50 me-2">Details</a>
+                    <a href="pet-details.html?adopt=true" class="btn btn-primary-custom btn-sm w-50">Adopt</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="col">
+              <div class="card card-hover h-100">
+                <div class="img-zoom-container">
+                  <span class="badge bg-success position-absolute top-0 start-0 m-3 z-3 py-2 px-3 rounded-pill">Available</span>
+                  <img src="https://images.unsplash.com/photo-1522858547137-f1dcec554f55?auto=format&fit=crop&w=600&h=450&q=80" class="card-img-top" alt="Coco the Cockatiel">
+                </div>
+                <div class="card-body p-4">
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <h4 class="card-title mb-0">Coco</h4>
+                    <span class="badge bg-light text-secondary border py-2 px-3 rounded-pill"><i class="bi bi-gender-male text-primary"></i> Male</span>
+                  </div>
+                  <p class="text-muted small mb-3"><i class="bi bi-info-circle me-1"></i> Cockatiel Bird &bull; 1 Year</p>
+                  <p class="card-text text-muted mb-4 small">Coco whistles beautiful tunes and is friendly with shoulder-perching.</p>
+                  <div class="d-flex justify-content-between align-items-center pt-3 border-top">
+                    <a href="pet-details.html" class="btn btn-outline-secondary-custom btn-sm w-50 me-2">Details</a>
+                    <a href="pet-details.html?adopt=true" class="btn btn-primary-custom btn-sm w-50">Adopt</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="col">
+              <div class="card card-hover h-100">
+                <div class="img-zoom-container">
+                  <span class="badge bg-success position-absolute top-0 start-0 m-3 z-3 py-2 px-3 rounded-pill">Available</span>
+                  <img src="https://images.unsplash.com/photo-1425082661705-1834bfd09dca?auto=format&fit=crop&w=600&h=450&q=80" class="card-img-top" alt="Milo the Hamster">
+                </div>
+                <div class="card-body p-4">
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <h4 class="card-title mb-0">Milo</h4>
+                    <span class="badge bg-light text-secondary border py-2 px-3 rounded-pill"><i class="bi bi-gender-male text-primary"></i> Male</span>
+                  </div>
+                  <p class="text-muted small mb-3"><i class="bi bi-info-circle me-1"></i> Syrian Hamster &bull; 3 Months</p>
+                  <p class="card-text text-muted mb-4 small">Milo is tiny, cute, active on his wheel, and loves burrowing in shavings.</p>
+                  <div class="d-flex justify-content-between align-items-center pt-3 border-top">
+                    <a href="pet-details.html" class="btn btn-outline-secondary-custom btn-sm w-50 me-2">Details</a>
+                    <a href="pet-details.html?adopt=true" class="btn btn-primary-custom btn-sm w-50">Adopt</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Pagination -->
+          <nav aria-label="Pet Listing Navigation" class="mt-5">
+            <ul class="pagination justify-content-center">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+              </li>
+              <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+              </li>
+            </ul>
+          </nav>
+
+        </div>
+        
+      </div>
+    </div>
+  </main>
+
+  <!-- MOBILE FILTER OFFCANVAS SIDEBAR -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="filterSidebar" aria-labelledby="filterSidebarLabel">
+    <div class="offcanvas-header border-bottom">
+      <h5 class="offcanvas-title text-secondary-custom fw-bold" id="filterSidebarLabel">Filters & Options</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <form id="mobileFilterForm">
+        <!-- Keyword -->
+        <div class="mb-4">
+          <label for="petKeywordMobile" class="form-label fw-semibold">Search by Name</label>
+          <div class="input-group">
+            <input type="text" id="petKeywordMobile" class="form-control" placeholder="e.g. Luna">
+            <button class="btn btn-primary-custom" type="button" aria-label="Search"><i class="bi bi-search"></i></button>
+          </div>
+        </div>
+        <!-- Animal Type -->
+        <div class="mb-4">
+          <label for="animalTypeMobile" class="form-label fw-semibold">Animal Type</label>
+          <select id="animalTypeMobile" class="form-select">
+            <option selected>All Types</option>
+            <option>Dogs</option>
+            <option>Cats</option>
+            <option>Birds</option>
+            <option>Rabbits</option>
+            <option>Hamsters</option>
+          </select>
+        </div>
+        <!-- Gender -->
+        <div class="mb-4">
+          <label class="form-label fw-semibold d-block">Gender</label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="male" id="genderMaleMobile" checked>
+            <label class="form-check-label" for="genderMaleMobile">Male</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="female" id="genderFemaleMobile" checked>
+            <label class="form-check-label" for="genderFemaleMobile">Female</label>
+          </div>
+        </div>
+        <!-- Age -->
+        <div class="mb-4">
+          <label for="ageGroupMobile" class="form-label fw-semibold">Age Group</label>
+          <select id="ageGroupMobile" class="form-select">
+            <option selected>Any Age</option>
+            <option>Baby (Puppy/Kitten)</option>
+            <option>Young</option>
+            <option>Adult</option>
+            <option>Senior</option>
+          </select>
+        </div>
+        <!-- Site -->
+        <div class="mb-4">
+          <label for="locationSiteMobile" class="form-label fw-semibold">Shelter Site</label>
+          <select id="locationSiteMobile" class="form-select">
+            <option selected>All Sites</option>
+            <option>Downtown Hub</option>
+            <option>Eastside Shelter</option>
+            <option>Westside Network</option>
+          </select>
+        </div>
+        <!-- Reset -->
+        <button type="reset" class="btn btn-outline-secondary-custom w-100" data-bs-dismiss="offcanvas">Reset Filters</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer-dark pt-5 pb-4">
+    <div class="container">
+      <div class="row g-4 mb-5">
+        <div class="col-md-4">
+          <h5 class="text-white fw-bold mb-3 d-flex align-items-center">
+            <i class="bi bi-paw-fill text-primary-custom me-2"></i>Happy Paws
+          </h5>
+          <p class="small text-white-50">Happy Paws is a modern, non-profit rescue shelter and adoption center. Founded in 2018, we work hard to rescue strays, provide emergency veterinary care, and find loving homes for abandoned animals.</p>
+          <div class="d-flex gap-3 mt-4">
+            <a href="#" class="fs-5 text-white-50" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="fs-5 text-white-50" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="fs-5 text-white-50" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="fs-5 text-white-50" aria-label="Youtube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-2 offset-md-1">
+          <h5 class="text-white fw-bold mb-3">Quick Links</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2 small">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="pets.html">Available Pets</a></li>
+            <li><a href="adoption.html">Adoption Process</a></li>
+            <li><a href="stories.html">Success Stories</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-md-2">
+          <h5 class="text-white fw-bold mb-3">Pet Categories</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2 small">
+            <li><a href="pets.html?type=dogs">Adoptable Dogs</a></li>
+            <li><a href="pets.html?type=cats">Adoptable Cats</a></li>
+            <li><a href="pets.html?type=birds">Adoptable Birds</a></li>
+            <li><a href="pets.html?type=rabbits">Adoptable Rabbits</a></li>
+            <li><a href="donation.html">Sponsorship Plans</a></li>
+            <li><a href="blog.html">Pet Care Blog</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5 class="text-white fw-bold mb-3">Contact Shelter</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2 small text-white-50">
+            <li class="d-flex align-items-start gap-2">
+              <i class="bi bi-geo-alt-fill text-primary-custom mt-1"></i>
+              <span>1042 Shelter Lane, Petville, CO 80210</span>
+            </li>
+            <li class="d-flex align-items-center gap-2">
+              <i class="bi bi-telephone-fill text-primary-custom"></i>
+              <span>(303) 555-0199</span>
+            </li>
+            <li class="d-flex align-items-center gap-2">
+              <i class="bi bi-envelope-fill text-primary-custom"></i>
+              <span>info@happypawsrescue.org</span>
+            </li>
+            <li class="d-flex align-items-start gap-2">
+              <i class="bi bi-clock-fill text-primary-custom mt-1"></i>
+              <span>Mon - Sat: 9am - 6pm<br>Sun: 11am - 4pm</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr class="border-secondary mb-4">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+          <span class="small text-white-50">&copy; 2026 Happy Paws Pet Adoption Shelter. All rights reserved.</span>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <a href="#" class="small text-white-50 me-3">Privacy Policy</a>
+          <a href="#" class="small text-white-50">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
